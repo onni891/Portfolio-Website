@@ -2,7 +2,7 @@
 
 A modern, responsive **Hero Section** built using **React & Chakra UI**, featuring dynamic mouse-following animations for an interactive effect.
 
-![Preview](https://i.postimg.cc/90cZRpRj/image.png)
+https://Kooditaivas.fi
 
 ## 🚀 Features
 - Fully **responsive** (adjusts layout for mobile & desktop)
