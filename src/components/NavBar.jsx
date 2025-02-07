@@ -133,13 +133,13 @@ const Navbar = () => {
 
         {/* Right: Social Icons */}
         <HStack spacing={4} display={{ base: "none", md: "flex" }}>
-          <Link href="https://www.linkedin.com" isExternal>
+          <Link href="https://www.linkedin.com/in/onni-kolehmainen-4471b6327/" isExternal>
             <Image src="https://i.postimg.cc/wMg1vjtf/image.png" alt="LinkedIn" boxSize="24px" />
           </Link>
-          <Link href="https://www.github.com" isExternal>
+          <Link href="https://github.com/onni891" isExternal>
             <Image src="https://i.postimg.cc/1zVn7ThH/image-removebg-preview-1.png" alt="GitHub" boxSize="24px" />
           </Link>
-          <Link href="https://www.twitter.com" isExternal>
+          <Link href="https://x.com/OnniKolehmainen" isExternal>
             <Image src="https://i.postimg.cc/zBmLsjq1/image.png" alt="X" boxSize="24px" />
           </Link>
         </HStack>
@@ -198,7 +198,7 @@ const Navbar = () => {
           <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={scrollToTop}>
             Home
           </Link>
-          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('Skills')}>
+          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('skills')}>
             Languages
           </Link>
           <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('about')}>

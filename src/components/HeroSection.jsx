@@ -16,7 +16,7 @@ const HeroSection = () => {
     };
 
     return (
-        <Box id="hero" bg="customBlue.500" color="white" py={{ base: 16, md: 32 }}>
+        <Box id="hero" bg="#08233B" color="white" py={{ base: 16, md: 32 }}>
             <Flex
                 align={{ base: "flex-start", md: "flex-start" }}
                 direction={{ base: "column", md: "row" }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
                         letterSpacing="wide"
                     >
                         <Text as="span" color="gray.200">I'm </Text>
-                        <Text as="span" color="blue.300">Adeola Badero</Text>
+                        <Text as="span" color="blue.300">Onni Kolehmainen</Text>
                     </Heading>
                     <Heading
                         as="h2"
@@ -47,7 +47,7 @@ const HeroSection = () => {
                         lineHeight="shorter"
                         letterSpacing="wide"
                     >
-                        a Software Engineer
+                        a Web Developer
                     </Heading>
                     <Text fontSize={{ base: "xl", md: "2xl" }} color="gray.500">
                         Currently focused on building user experiences that drive growth.

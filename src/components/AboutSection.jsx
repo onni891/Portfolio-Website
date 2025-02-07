@@ -3,7 +3,7 @@ import { Box, Text, Heading, VStack, Link, Grid, GridItem, Separator, Flex } fro
 
 const AboutSection = () => {
     return (
-        <Box id="about" bg="customBlue.500" py={16} px={8} color="white">
+        <Box id="about" bg="#08233B" py={16} px={8} color="white">
             <Grid
                 templateColumns={{ base: "1fr", md: "3fr 2fr" }}
                 gap={10}

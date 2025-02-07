@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: 08233B;
 }
 
 :root {
-
+  background: 08233B;
   scroll-behavior: smooth;
 }
 
