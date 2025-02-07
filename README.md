@@ -1,8 +1,62 @@
-# React + Vite
+# Hero Section - React Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Hero Section** built using **React & Chakra UI**, featuring dynamic mouse-following animations for an interactive effect.
 
-Currently, two official plugins are available:
+![Preview](https://i.postimg.cc/90cZRpRj/image.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- Fully **responsive** (adjusts layout for mobile & desktop)
+- **Smooth hover animation** (image follows cursor slightly)
+- **Custom styling** using Chakra UI
+- **Optimized for performance** and user experience
+
+## 📦 Installation
+
+First, clone the repository and navigate to the project folder:
+
+```sh
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git 
+cd YOUR_REPOSITORY_NAME 
+
+Then, install dependencies:
+```npm install 
+
+ 
+## 🛠️ Usage
+Run the development server:
+
+```sh
+```Copy
+```Edit
+```npm run dev
+
+Import the component into your React project:
+
+```jsx
+```Copy
+```Edit
+```import HeroSection from "./components/HeroSection";
+```
+```function App() {
+```  return (
+```    <div>
+```      <HeroSection />
+```    </div>
+```  );
+```}
+```
+```export default App;
+
+
+## 📝 License
+This project is open-source and available under the MIT License.
+
+
+## Enjoy coding! 🎉🚀
+
+### 🔹 Notes:
+- Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username.
+- Replace `YOUR_REPOSITORY_NAME` with your GitHub repo name.
+- You can customize it with your actual **LinkedIn**, **Twitter**, or **GitHub profile**.
+
+This README will **properly display** on GitHub, complete with images, badges, and installation instructions. 🚀🎨 Let me know if you need any changes!
