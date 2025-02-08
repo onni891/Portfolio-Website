@@ -195,16 +195,16 @@ const Navbar = () => {
         zIndex={999}
       >
         <VStack spacing={6} mt={4}>
-          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={scrollToTop}>
+          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => { scrollToTop(); setIsMenuOpen(false); }}>
             Home
           </Link>
-          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('skills')}>
+          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => { scrollTo('skills'); setIsMenuOpen(false); }}>
             Languages
           </Link>
-          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('about')}>
+          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => { scrollTo('about'); setIsMenuOpen(false); }}>
             About
           </Link>
-          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => scrollTo('contact')}>
+          <Link fontSize="lg" color="white" _hover={{ color: "blue.300" }} onClick={() => { scrollTo('contact'); setIsMenuOpen(false); }}>
             Contact
           </Link>
           <HStack spacing={4}>

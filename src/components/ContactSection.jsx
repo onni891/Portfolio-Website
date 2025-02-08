@@ -1,18 +1,29 @@
 import React from "react";
-import { Box, Heading, VStack, Text, Button } from "@chakra-ui/react";
+import { Box, Text, Link, Flex } from "@chakra-ui/react";
 
 const ContactSection = () => {
-    return (
-        <Box id="contact" py={20} px={6} bg="#08233B" color="white">
-            <Heading as="h2" size="xl" textAlign="center" mb={10}>
-                Contact
-            </Heading>
-            <VStack spacing={4} maxW="600px" mx="auto">
-                <Text fontSize="lg">Email: example@email.com</Text>
-                <Button colorScheme="blue">Send a Message</Button>
-            </VStack>
-        </Box>
-    );
+  return (
+    <Box bg="#08233B" py={4} px={8} color="white" textAlign="center">
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+        gap={2}
+        fontSize="sm"
+      >
+        <Text>
+          © 2025. KoodiTaivas | Onni Kolehmainen. All Rights Reserved.
+        </Text>
+        <Link
+          href="mailto:lucky.onniko@gmail.com"
+          color="blue.300"
+          fontWeight="bold"
+        >
+          lucky.onniko@gmail.com
+        </Link>
+      </Flex>
+    </Box>
+  );
 };
 
 export default ContactSection;
