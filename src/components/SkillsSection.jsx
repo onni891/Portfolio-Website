@@ -1,118 +1,107 @@
 import React from "react";
-import { Box, Heading, Grid, Image, Text, Badge, VStack } from "@chakra-ui/react";
+import { Box, Image, Badge, Heading } from "@chakra-ui/react";
 
 const SkillsSection = () => {
   const skills = [
     {
       name: "JavaScript",
-      logo: "https://www.stickpng.com/assets/images/5848152fcef1014c0b5e4967.png",
-      description: "6+ years of experience, proficient in ES6+.",
+      logo: "https://i.postimg.cc/c45zGD5j/image-removebg-preview-3.png",
       years: "6+ years",
     },
     {
       name: "React",
       logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-      description: "5+ years building dynamic UI components.",
       years: "5+ years",
     },
     {
       name: "CSS",
       logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-      description: "6+ years styling responsive layouts.",
       years: "6+ years",
     },
     {
       name: "HTML",
       logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-      description: "6+ years of semantic HTML.",
       years: "6+ years",
     },
     {
       name: "Python",
       logo: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
-      description: "4+ years in scripting and data analysis.",
       years: "4+ years",
     },
     {
       name: "C++",
       logo: "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-      description: "3+ years in competitive programming.",
       years: "3+ years",
     },
     {
       name: "MySQL",
-      logo: "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
-      description: "3+ years designing relational databases.",
+      logo: "https://i.postimg.cc/rpTCBxc3/image.png",
       years: "3+ years",
     },
     {
       name: "PHP",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-      description: "3+ years in backend web development.",
+      logo: "https://i.postimg.cc/26cQLtvN/image.png",
       years: "3+ years",
-    },
-    {
-      name: "Discord JS",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Discord_logo.svg",
-      description: "2+ years building Discord bots.",
-      years: "2+ years",
-    },
-    {
-      name: "Chakra UI",
-      logo: "https://chakra-ui.com/logo-light.svg",
-      description: "1+ year creating elegant interfaces.",
-      years: "1+ year",
-    },
-    {
-      name: "Lua",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg",
-      description: "2+ years scripting in gaming environments.",
-      years: "2+ years",
-    },
-    {
-      name: "TypeScript",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-      description: "2+ years of typed JavaScript development.",
-      years: "2+ years",
     },
   ];
 
   return (
-    <Box id="skills" py={20} bg="#08233B">
-      <Heading as="h2" size="xl" textAlign="center" mb={10} color="#fff">
-        My Skills
+    <Box py={20} bgGradient="linear(to-b, #0D223E, #102A44)">
+      <Heading
+        as="h2"
+        fontSize={{ base: "3xl", md: "5xl" }}
+        fontWeight="bold"
+        mb={8}
+        lineHeight="1.2"
+        textAlign="center"
+        color="#E2E8F0"
+      >
+        My Coding Languages
       </Heading>
-      <Grid
-        templateColumns={"repeat(auto-fit, minmax(300px, 1fr))"}
+      <Box
+        id="skills"
+        display="grid"
+        gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }}
         gap={6}
+        px={6}
         maxW="1200px"
         mx="auto"
-        px={6}
       >
         {skills.map((skill) => (
           <Box
             key={skill.name}
             bg="rgba(255, 255, 255, 0.1)"
+            shadow="lg"
             p={6}
-            rounded="lg"
-            _hover={{ transform: "scale(1.05)" }}
-            transition="transform 0.2s"
+            rounded="xl"
+            _hover={{ transform: "translateY(-10px)", boxShadow: "xl" }}
+            transition="all 0.3s ease-in-out"
+            backdropFilter="blur(10px)"
           >
-            <VStack align="start">
-              <Image src={skill.logo} alt={skill.name} boxSize="60px" mb={4} />
-              <Text fontSize="lg" fontWeight="bold" color="#fff">
-                {skill.name}
-              </Text>
-              <Text fontSize="sm" color="rgba(255, 255, 255, 0.7)">
-                {skill.description}
-              </Text>
-              <Badge colorScheme="teal" mt={2}>
-                {skill.years}
-              </Badge>
-            </VStack>
+            <Image
+              src={skill.logo}
+              alt={skill.name}
+              boxSize="80px"
+              bg="rgba(255, 255, 255, 0.2)"
+              p={4}
+              rounded="full"
+              mx="auto"
+            />
+            <Badge
+              mt={4}
+              colorScheme="teal"
+              fontSize="md"
+              textAlign="center"
+              display="block"
+              px={4}
+              py={1}
+              borderRadius="full"
+            >
+              {skill.years}
+            </Badge>
           </Box>
         ))}
-      </Grid>
+      </Box>
     </Box>
   );
 };

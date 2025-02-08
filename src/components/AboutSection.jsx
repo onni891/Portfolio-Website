@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Text, Heading, VStack, Link, Grid, GridItem, Separator, Flex } from "@chakra-ui/react";
+import { Box, Text, Heading, VStack, Link, Grid, GridItem, Flex } from "@chakra-ui/react";
 
 const AboutSection = () => {
     return (
@@ -20,52 +20,32 @@ const AboutSection = () => {
                         mb={8}
                         lineHeight="1.2"
                     >
-                        I AMPLIFY BRAND VOICES <br /> THROUGH THE WEB
+                        I CREATE WEBSITES <br /> THAT ELEVATE BRANDS
                     </Heading>
 
                     <Text fontSize="lg" color="gray.300" lineHeight="1.8" mb={6}>
-                        My passion lies in creating strong business solutions that aid
-                        business growth. Whether it's a website to boost brand publicity or
-                        software solutions that streamline otherwise manual processes, I
-                        love taking brands from point A to their dreamy point B and
-                        iteratively improving as time goes on.
+                        With over 6 years of experience in web development, I specialize in crafting dynamic and user-friendly websites that leave a lasting impression. From small businesses to established brands, I help bring visions to life online.
                     </Text>
-
-                  
 
                     <Text fontSize="lg" color="gray.300" lineHeight="1.8" mb={6}>
-                        From writing my first lines of code back in late 2019 to this point,
-                        I have continually refined my development skills, picking up UI/UX
-                        design along the way and solving complex challenges to ensure
-                        improvement.
+                        Whether it’s building a new website, enhancing an existing one, or creating custom features, I love solving challenges with clean and efficient code. My goal is to make the web work for you while ensuring it looks great.
                     </Text>
 
-                    
-
                     <Text fontSize="lg" color="gray.300" lineHeight="1.8">
-                        Each challenge is unique, so I ensure that I learn and grow through
-                        each one, ensuring that I not only put in my best but also deliver
-                        solutions that businesses are proud to call their own. Wanna learn
-                        more? Here's{" "}
-                        <Link href="#" color="blue.300" textDecoration="underline">
-                            my résumé
-                        </Link>
-                        .
+                        Each project is an opportunity to grow, learn, and create something meaningful. Curious to learn more? Contact Me!
                     </Text>
                 </GridItem>
 
                 {/* Right Side: Tools Section */}
                 <GridItem>
-                    <Flex direction="column" gap={6} mt={249} >
+                    <Flex direction="column" gap={6} mt={249}>
                         {/* Frontend Tools */}
                         <VStack align="start">
                             <Heading as="h3" fontSize="xl" color="white" mb={4}>
                                 Frontend Tools
                             </Heading>
                             <Text color="gray.400" fontSize="md">
-                                JavaScript (ES6+), React, Next.js, TypeScript, Redux, Redux
-                                Toolkit, React Query, HTML5, Git/GitHub, React Hook Form,
-                                Formik.
+                                JavaScript (ES6+), React, Next.js, TypeScript, HTML5, Git/GitHub.
                             </Text>
                         </VStack>
 
@@ -75,18 +55,17 @@ const AboutSection = () => {
                                 UI Libraries
                             </Heading>
                             <Text color="gray.400" fontSize="md">
-                                CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Chakra UI,
-                                Framer Motion, Bootstrap, ReCharts.
+                                Tailwind CSS, Chakra UI, Styled Components, Framer Motion, Bootstrap.
                             </Text>
                         </VStack>
 
-                        {/* Design Tools */}
+                        {/* Back-End Coding */}
                         <VStack align="start">
                             <Heading as="h3" fontSize="xl" color="white" mb={4}>
-                                Design Tools
+                                Back-End Coding
                             </Heading>
                             <Text color="gray.400" fontSize="md">
-                                Figma, FigJam, UX Research, UI Design, Prototyping.
+                                Node.js, Express.js, MySQL, MongoDB, PHP, REST APIs, Firebase.
                             </Text>
                         </VStack>
                     </Flex>
