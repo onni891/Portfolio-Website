@@ -14,10 +14,9 @@ This is the frontend codebase for **Kooditaivas.fi**, a website built using **Re
 ```
 📦 kooditaivas-frontend
 ├── 📂 src
-│   ├── 📂 components  # Reusable UI components
-│   ├── 📂 pages       # Page components for routing
+│   ├── 📂 components  # Reusable UI components, Pages.
 │   ├── 📂 assets      # Static assets (images, fonts, etc.)
-│   ├── 📂 styles      # Global styles
+│   ├── 📜 app.css     # Global Style.css 
 │   ├── 📜 main.jsx    # Main entry point
 │   ├── 📜 App.jsx     # Root component
 │
