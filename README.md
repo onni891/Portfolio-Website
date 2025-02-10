@@ -82,7 +82,7 @@ If you want to contribute, feel free to fork the repository and create a pull re
 
 ## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the Kooditaivas License. Please read before use.
 
 ---
 
